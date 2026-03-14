@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kidu Gebrehiwot Tadesse | Portfolio</title>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6;transition:.3s}
+.light-mode{background:#f1f5f9;color:#0f172a}
+
+header{background:linear-gradient(135deg,#020617,#1e293b);padding:80px 20px;text-align:center}
+.light-mode header{background:linear-gradient(135deg,#e2e8f0,#cbd5f5)}
+
+h1{font-size:40px;margin-bottom:10px}
+.hero-sub{font-size:18px;color:#94a3b8}
+.profile-img{width:150px;height:150px;border-radius:50%;border:4px solid #38bdf8;margin-bottom:20px}
+nav{margin-top:25px}
+nav a{color:#38bdf8;margin:0 14px;text-decoration:none;font-weight:600}
+nav a:hover{color:white}
+section{max-width:1100px;margin:auto;padding:70px 25px}
+h2{color:#38bdf8;margin-bottom:25px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:#1e293b;padding:24px;border-radius:14px;transition:transform .3s, box-shadow .3s}
+.light-mode .card{background:white}
+.card:hover{transform:translateY(-8px);box-shadow:0 10px 25px rgba(0,0,0,.4)}
+.stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat h3{font-size:36px;color:#38bdf8;margin:0}
+.skills{max-width:700px}
+.skill{margin-bottom:18px}
+.skill-name{margin-bottom:6px}
+.skill-bar{height:10px;background:#334155;border-radius:10px;overflow:hidden}
+.skill-level{height:10px;background:#38bdf8}
+.project-card{background:#1e293b;padding:24px;border-radius:14px;transition:all .3s}
+.light-mode .project-card{background:white}
+.project-card:hover{transform:translateY(-6px);box-shadow:0 10px 25px rgba(0,0,0,.35)}
+.project-card a{color:#38bdf8;text-decoration:none;font-weight:bold}
+.timeline{border-left:3px solid #38bdf8;padding-left:20px}
+.timeline-item{margin-bottom:25px}
+button.toggle{margin-top:20px;padding:8px 16px;border:none;border-radius:8px;cursor:pointer;background:#38bdf8}
+.cv-btn{display:inline-block;margin-top:15px;padding:10px 18px;background:#38bdf8;border-radius:8px;text-decoration:none;color:black;font-weight:bold}
+.repo{background:#1e293b;padding:20px;border-radius:12px;margin-bottom:15px}
+.light-mode .repo{background:white}
+.dashboard-frame{width:100%;height:450px;border:none;border-radius:12px}
+footer{background:#020617;text-align:center;padding:35px;margin-top:60px}
+.light-mode footer{background:#e2e8f0}
+.contact-box{background:#1e293b;padding:30px;border-radius:12px;text-align:center}
+.light-mode .contact-box{background:white}
+.counter{font-size:36px;color:#38bdf8;font-weight:bold}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.blog-card{background:#1e293b;padding:22px;border-radius:12px}
+.light-mode .blog-card{background:white}
+.chatbot-btn{position:fixed;bottom:20px;right:20px;background:#38bdf8;border:none;padding:14px 16px;border-radius:50%;font-size:18px;cursor:pointer}
+.chatbox{position:fixed;bottom:90px;right:20px;width:280px;background:#1e293b;border-radius:12px;padding:15px;display:none}
+.light-mode .chatbox{background:white}
+.chatbox input{width:100%;padding:8px;margin-top:8px;border-radius:6px;border:none}
+</style>
+</head>
+
+<body>
+<header>
+<img src="profile.jpg" class="profile-img" alt="Profile Photo">
+<h1>👋 Hi, I'm Kidu Gebrehiwot Tadesse</h1>
+<p class="hero-sub">🎓 Computer Science Lecturer | 📊 Information Management Specialist | 🌍 Humanitarian Data Professional | 🤖 AI & Digital Transformation Advocate</p>
+<p>📍 Mekelle, Tigray, Ethiopia</p>
+<p>📧 kidughiwot3@gmail.com</p>
+<a href="cv.pdf" class="cv-btn">Download CV</a>
+<br>
+<button class="toggle" onclick="toggleMode()">Toggle Dark/Light Mode</button>
+<nav>
+<a href="#profile">Profile</a>
+<a href="#timeline">Career</a>
+<a href="#skills">Skills</a>
+<a href="#repos">GitHub Projects</a>
+<a href="#dashboards">Dashboards</a>
+<a href="#research">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section id="stats">
+<h2>📊 Professional Highlights</h2>
+<div class="stats">
+<div class="stat"><div class="counter" data-target="15">0</div><p>Years Experience</p></div>
+<div class="stat"><div class="counter" data-target="30">0</div><p>Projects</p></div>
+<div class="stat"><div class="counter" data-target="10">0</div><p>Training Programs</p></div>
+</div>
+</section>
+
+<section id="profile">
+<h2>🧭 Professional Profile</h2>
+<p>I am a seasoned Computer Science professional with <strong>15+ years of experience</strong> spanning academia, humanitarian data systems, digital transformation, and career development leadership.</p>
+<p>With an <strong>M.Sc. in Computer Science</strong>, I specialize in:</p>
+<ul>
+<li>Designing and implementing data-driven solutions</li>
+<li>Information management in humanitarian settings</li>
+<li>Advanced data analytics and visualization</li>
+<li>Digital literacy, employability, and life skills training</li>
+<li>Integrating AI and emerging technologies into development work</li>
+</ul>
+<p>My work bridges <strong>technology, education, and humanitarian response</strong> to create sustainable impact.</p>
+<h3>💼 Professional Experience Highlights</h3>
+<h4>📊 Information Management & Humanitarian Data</h4>
+<ul>
+<li>Supervisor – Economic Establishment Census (Ethiopian Statistical Service, 2025–Present)</li>
+<li>Supervisor – Tigray War Damages Assessment (Commission of Inquiry)</li>
+<li>Supervisor – Rapid Humanitarian Assessment (UNHCR-funded project)</li>
+<li>Data Collector & Analyst – Save the Children & USAID Project</li>
+<li>Targeting & Registration Assistant – WFP Food Distribution</li>
+<li>Vulnerability-Based Targeting Data Collector – JEOP (REST)</li>
+</ul>
+<p><strong>Key Competencies:</strong></p>
+<ul>
+<li>ODK, KoBoToolbox, CommCare</li>
+<li>Data quality assurance & verification</li>
+<li>Field team supervision & training</li>
+<li>Evidence-based reporting</li>
+<li>Ethical data collection & confidentiality management</li>
+</ul>
+<h4>🎓 Academic & Leadership Roles</h4>
+<ul>
+<li>Lecturer – Mekelle, Adigrat & Arba Minch Universities (2010–2024)</li>
+<li>Assistant Director – Career Development Center (Mekelle University)</li>
+<li>Coordinator – CS Postgraduate Program</li>
+<li>Coordinator – Summer & Distance Education Programs</li>
+</ul>
+<p><strong>Core Contributions:</strong></p>
+<ul>
+<li>Teaching Data Structures, Algorithms, and core Computer Science courses</li>
+<li>Research supervision and academic mentorship</li>
+<li>Career readiness training and employability programs</li>
+<li>Partnership building with NGOs and employers</li>
+</ul>
+<h4>🤖 AI & Emerging Technology Integration</h4>
+<p>Hands-on experience with: ChatGPT, Azure OpenAI, Google Gemini, DeepSeek, GROK, Power BI, SPSS, Advanced Excel Analytics</p>
+<p>Focused on: AI-assisted reporting, Data workflow automation, Generative AI for information management, AI for post-conflict recovery & development</p>
+</section>
+
+<section id="skills">
+<h2>🛠 Technical Skills</h2>
+<div class="skills">
+<div class="skill"><div class="skill-name">Python</div><div class="skill-bar"><div class="skill-level" style="width:90%"></div></div></div>
+<div class="skill"><div class="skill-name">Data Analytics</div><div class="skill-bar"><div class="skill-level" style="width:95%"></div></div></div>
+<div class="skill"><div class="skill-name">Power BI</div><div class="skill-bar"><div class="skill-level" style="width:85%"></div></div></div>
+<div class="skill"><div class="skill-name">Information Systems</div><div class="skill-bar"><div class="skill-level" style="width:90%"></div></div></div>
+</div>
+</section>
+
+<section id="repos">
+<h2>💻 Live GitHub Projects</h2>
+<div id="repo-container"></div>
+</section>
+
+<section id="dashboards">
+<h2>📈 Power BI Dashboard Gallery</h2>
+<p>Example dashboard embedded below. Replace with your Power BI public dashboard link.</p>
+<iframe class="dashboard-frame" src="https://app.powerbi.com/view?r=example"></iframe>
+</section>
+
+<section id="research">
+<h2>📂 Featured Portfolio Projects</h2>
+<div class="card-grid">
+<div class="card"><h3>📊 Humanitarian Data Analysis Templates</h3><p>Tools and templates for humanitarian data analysis and reporting.</p></div>
+<div class="card"><h3>📘 Data Structures & Algorithms Teaching Materials</h3><p>Educational resources and lecture materials for computer science students.</p></div>
+<div class="card"><h3>🎓 Job Searching Skills Training Manual</h3><p>Training materials designed to improve youth employability skills.</p></div>
+<div class="card"><h3>🤖 AI Applications for Development</h3><p>Concepts and use cases of AI in humanitarian and development contexts.</p></div>
+<div class="card"><h3>📈 Power BI Dashboard Samples</h3><p>Interactive dashboards for data-driven decision making.</p></div>
+<div class="card"><h3>📝 Monitoring & Evaluation Frameworks</h3><p>Examples of logframe design and theory of change models.</p></div>
+</div>
+</section>
+
+<section id="certifications">
+<h2>📚 Certifications & Training</h2>
+<ul>
+<li>TOT in Digital Literacy Skills (Dereja.com, 2024)</li>
+<li>Teaching Career Readiness – Brandeis University (USA)</li>
+<li>TOT in Employability Skills – GIZ, Ethiojobs</li>
+<li>TOT in Transferable Life Skills – Save the Children</li>
+<li>Career/VGC Management & Counseling Certification</li>
+</ul>
+</section>
+
+<section id="contact">
+<h2>📫 Connect With Me</h2>
+<div class="contact-box">
+<p><strong>Email:</strong> kidughiwot3@gmail.com</p>
+<p><strong>Location:</strong> Mekelle, Ethiopia</p>
+<p>Open to collaboration in <strong>research, AI for development, and humanitarian data systems</strong>.</p>
+</div>
+</section>
+
+<footer>
+<p>⭐ "Leveraging Data, Education, and AI to Drive Sustainable Impact."</p>
+<p>© 2026 Kidu Gebrehiwot Tadesse</p>
+</footer>
+
+<script>
+function toggleMode(){document.body.classList.toggle('light-mode');}
+
+// Animated counters
+const counters=document.querySelectorAll('.counter');
+counters.forEach(counter=>{
+const update=()=>{
+const target=+counter.getAttribute('data-target');
+const c=+counter.innerText;
+const inc=target/80;
+if(c<target){counter.innerText=Math.ceil(c+inc);setTimeout(update,40);}else{counter.innerText=target+'+';}}
+update();});
+
+// Chatbot
+function toggleChat(){
+const box=document.getElementById('chatbox');
+box.style.display=box.style.display==='block'?'none':'block';}
+function chatReply(e){
+if(e.key==='Enter'){
+const q=document.getElementById('chatInput').value.toLowerCase();
+let r="Please email me for details.";
+if(q.includes('experience')) r="I have over 15 years of experience in computer science and information systems.";
+if(q.includes('skills')) r="My key skills include Python, Data Analytics, Power BI, and Information Systems.";
+if(q.includes('research')) r="My research focuses on AI for development, digital transformation, and youth employability.";
+document.getElementById('chatResponse').innerText=r;
+}}
+
+// Load GitHub repositories automatically
+const username = "yourusername";
+fetch(`https://api.github.com/users/${username}/repos`)
+.then(response => response.json())
+.then(data => {
+ const container = document.getElementById("repo-container");
+ data.slice(0,6).forEach(repo => {
+ const div = document.createElement("div");
+ div.className = "repo";
+ div.innerHTML = `<h3>${repo.name}</h3><p>${repo.description || "No description"}</p><a href="${repo.html_url}" target="_blank">View Repository →</a>`;
+ container.appendChild(div);
+ });
+});
+</script>
+</body>
+</html>
